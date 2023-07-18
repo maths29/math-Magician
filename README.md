@@ -59,7 +59,7 @@ This is the first project of Module 2
 
 > Key features of the application.
 
-- **[Use callbacks and promises.]**
+- **[React.js]**
 - **[use proper ES6 syntax.]**
 - **[Use ES6 modules to write modular JavaScript.]**
 - **[Use webpack to bundle JavaScript.]**
@@ -83,13 +83,13 @@ This is the first project of Module 2
 1.  Clone the Repo with:
 
 ```
-https://github.com/maths29/leaderboard.git
+https://github.com/maths29/math-Magician.git
 ```
 
 2. switch to the cloned directory
 
 ```
-cd leaderboard/https://github.com/maths29/leaderboard
+cd math-Magician/https://github.com/maths29/math-Magician
 ```
 
 ### Installation
