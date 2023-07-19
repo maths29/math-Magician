@@ -4,13 +4,17 @@
 }
 
 .calculator {
+  display: inline-block;
+  border: 1px solid #000;
   width: 35%;
   min-width: 600px;
   margin: auto;
 }
 
-.buttons-div {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 button {
@@ -38,7 +42,9 @@ button:active {
 }
 
 .zero {
-  width: 50%;
+  grid-column: 1 / span 2;
+  grid-row: 5 / span 1;
+  width: 100%;
 }
 
 .operation {

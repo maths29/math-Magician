@@ -1,9 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function Button() {
+function Button({ label, className }) {
   return (
-    <div className="num">0</div>
+    <button type="button" className={className}>
+      {label}
+    </button>
   );
 }
-
+Button.propTypes = {
+  label: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
+};
 export default Button;

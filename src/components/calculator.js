@@ -1,45 +1,39 @@
 import React from 'react';
+import Button from './addButton';
 
 const Calculator = () => (
   <div className="calculator">
-    <div className="button-div">
-      <div className="input">0</div>
-    </div>
-    <div className="button-div">
-      <button type="button">AC</button>
-      <button type="button">+/-</button>
-      <button type="button">%</button>
-      <button type="button" className="operation">÷</button>
-    </div>
 
-    <div className="button-div">
-      <button type="button">7</button>
-      <button type="button">8</button>
-      <button type="button">9</button>
-      <button type="button" className="operation">x</button>
-    </div>
+    <div className="input">0</div>
 
-    <div className="button-div">
-      <button type="button">4</button>
-      <button type="button">5</button>
-      <button type="button">6</button>
-      <button type="button" className="operation">-</button>
-    </div>
+    <div className="buttonContainer">
+      <Button label="AC" />
+      <Button label="+/-" />
+      <Button label="%" />
+      <Button label="÷" className="operation" />
 
-    <div className="button-div">
-      <button type="button">1</button>
-      <button type="button">2</button>
-      <button type="button">3</button>
-      <button type="button" className="operation">+</button>
-    </div>
+      <Button label="7" />
+      <Button label="8" />
+      <Button label="9" />
+      <Button label="X" className="operation" />
 
-    <div className="button-div">
-      <button type="button" className="zero">0</button>
-      <button type="button">.</button>
-      <button type="button" className="operation">=</button>
+      <Button label="4" />
+      <Button label="5" />
+      <Button label="6" />
+      <Button label="-" className="operation" />
+
+      <Button label="1" />
+      <Button label="2" />
+      <Button label="3" />
+      <Button label="+" className="operation" />
+
+      <Button label="0" className="zero" />
+      <Button label="." />
+      <Button label="=" className="operation" />
     </div>
 
   </div>
+
 );
 
 export default Calculator;
