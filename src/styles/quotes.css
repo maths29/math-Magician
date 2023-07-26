@@ -1,0 +1,16 @@
+p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.pDiv {
+  width: 85%;
+  margin: auto;
+  margin-top: 100px;
+  color: #fff;
+}
+
+.load {
+  font-size: 30px;
+  font-weight: bold;
+}

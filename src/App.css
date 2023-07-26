@@ -5,7 +5,6 @@
 
 .calculator {
   display: inline-block;
-  border: 1px solid #000;
   width: 35%;
   min-width: 600px;
   margin: auto;

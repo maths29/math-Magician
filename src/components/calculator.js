@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Button from './addButton';
 import calculate from '../logic/calculate';
+import '../styles/calculator.css';
+import Header from './Header';
 
 const Calculator = () => {
   const [state, setState] = useState({
@@ -15,37 +16,50 @@ const Calculator = () => {
   }
 
   return (
-    <div className="calculator">
-      <div className="buttonContainer" />
-      <div className="input">{state.next || state.total || '0'}</div>
-
-      <div className="buttonContainer">
-        <Button label="AC" onClick={() => handleClick('AC')} />
-        <Button label="+/-" onClick={() => handleClick('+/-')} />
-        <Button label="%" onClick={() => handleClick('%')} />
-        <Button label="÷" className="operation" onClick={() => handleClick('÷')} />
-
-        <Button label="7" onClick={() => handleClick('7')} />
-        <Button label="8" onClick={() => handleClick('8')} />
-        <Button label="9" onClick={() => handleClick('9')} />
-        <Button label="x" className="operation" onClick={() => handleClick('x')} />
-
-        <Button label="4" onClick={() => handleClick('4')} />
-        <Button label="5" onClick={() => handleClick('5')} />
-        <Button label="6" onClick={() => handleClick('6')} />
-        <Button label="-" className="operation" onClick={() => handleClick('-')} />
-
-        <Button label="1" onClick={() => handleClick('1')} />
-        <Button label="2" onClick={() => handleClick('2')} />
-        <Button label="3" onClick={() => handleClick('3')} />
-        <Button label="+" className="operation" onClick={() => handleClick('+')} />
-
-        <Button label="0" className="zero" onClick={() => handleClick('0')} />
-        <Button label="." onClick={() => handleClick('.')} />
-        <Button label="=" className="operation" onClick={() => handleClick('=')} />
+    <>
+      <Header />
+      <div>
+        <div className="prompAndCalDiv">
+          <h2 className="myh2">Let&#39;s do some math!</h2>
+          <div className="calInterface">
+            <div className="calculator">
+              <div className="buttonDiv">
+                <div className="inputField">{state.next || state.total || '0'}</div>
+              </div>
+              <div className="buttonDiv">
+                <button type="button" onClick={() => handleClick('AC')}>AC</button>
+                <button type="button" onClick={() => handleClick('+/-')}>+/-</button>
+                <button type="button" onClick={() => handleClick('%')}>%</button>
+                <button type="button" className="operation" onClick={() => handleClick('÷')}>÷</button>
+              </div>
+              <div className="buttonDiv">
+                <button type="button" onClick={() => handleClick('7')}>7</button>
+                <button type="button" onClick={() => handleClick('8')}>8</button>
+                <button type="button" onClick={() => handleClick('9')}>9</button>
+                <button type="button" className="operation" onClick={() => handleClick('x')}>x</button>
+              </div>
+              <div className="buttonDiv">
+                <button type="button" onClick={() => handleClick('4')}>4</button>
+                <button type="button" onClick={() => handleClick('5')}>5</button>
+                <button type="button" onClick={() => handleClick('6')}>6</button>
+                <button type="button" className="operation" onClick={() => handleClick('-')}>-</button>
+              </div>
+              <div className="buttonDiv">
+                <button type="button" onClick={() => handleClick('1')}>1</button>
+                <button type="button" onClick={() => handleClick('2')}>2</button>
+                <button type="button" onClick={() => handleClick('3')}>3</button>
+                <button type="button" className="operation" onClick={() => handleClick('+')}>+</button>
+              </div>
+              <div className="buttonDiv">
+                <button type="button" className="zero" onClick={() => handleClick('0')}>0</button>
+                <button type="button" onClick={() => handleClick('.')}>.</button>
+                <button type="button" className="operation" onClick={() => handleClick('=')}>=</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-    </div>
+    </>
   );
 };
 
