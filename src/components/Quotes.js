@@ -1,14 +1,21 @@
-import { useEffect, useState } from 'react';
+import {
+  useEffect, useState, useCallback, useMemo,
+} from 'react';
 import '../styles/quotes.css';
 import Header from './Header';
 
 const Quotes = () => {
   const [quoteData, setQuote] = useState({});
   const [error, setError] = useState('');
-  const header = new Headers();
-  header.append('x-api-key', 'OVLcX2/3XpWrpr1fR1+FqA==HqgZvSKqav5X8B74');
+  const header = useMemo(() => {
+    const headers = new Headers();
+    headers.append('x-api-key', 'OVLcX2/3XpWrpr1fR1+FqA==HqgZvSKqav5X8B74');
+    return headers;
+  }, []);
+
   const URL = 'https://api.api-ninjas.com/v1/quotes?category=';
-  const handlefetchApi = () => {
+
+  const handlefetchApi = useCallback(() => {
     const controller = new AbortController();
     const { signal } = controller;
 
@@ -24,13 +31,16 @@ const Quotes = () => {
       .catch((e) => {
         setError(`error message ${e}`);
       });
+
     return () => {
       setError('');
       controller.abort();
     };
-  };
-  useEffect(() => handlefetchApi(), []);
+  }, [header]);
 
+  useEffect(() => {
+    handlefetchApi();
+  }, [handlefetchApi]);
   return (
     <>
       <Header />
