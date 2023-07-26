@@ -1,14 +1,25 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import Calculator from './components/calculator';
-import Quote from './components/displayQuote';
+import Calculator from './components/Calculator';
+import Quotes from './components/Quotes';
+import Home from './components/Home';
 
 function App() {
-  return (
-    <div className="Container">
-      <Calculator />
-      <Quote />
-    </div>
-  );
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Home />,
+    },
+    {
+      path: '/calculator',
+      element: <Calculator />,
+    },
+    {
+      path: '/quote',
+      element: <Quotes />,
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;
