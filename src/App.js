@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import Calculator from 'src/components/Calculator';
+import Calculator from './components/calculator';
 import Quotes from './components/Quotes';
 import Home from './components/Home';
 

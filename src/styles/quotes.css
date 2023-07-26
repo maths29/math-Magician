@@ -9,3 +9,8 @@ p {
   margin-top: 100px;
   color: #fff;
 }
+
+.load {
+    font-size: 30px;
+    font-weight: bold;
+}
