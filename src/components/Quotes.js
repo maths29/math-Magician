@@ -2,7 +2,6 @@ import {
   useEffect, useState, useCallback, useMemo,
 } from 'react';
 import '../styles/quotes.css';
-import Header from './Header';
 
 const Quotes = () => {
   const [quoteData, setQuote] = useState({});
@@ -42,7 +41,6 @@ const Quotes = () => {
   }, [handlefetchApi]);
   return (
     <>
-      <Header />
       <div>
         {loading ? (
           <div className="pDiv load">Loading...</div>
