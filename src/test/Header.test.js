@@ -7,7 +7,7 @@ describe('test the top menu display', () => {
   test('check the menu snapshots', () => {
     const tree = renderer.create(
       <Router>
-        <Header/>
+        <Header />
       </Router>,
     ).toJSON;
 
