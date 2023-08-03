@@ -11,22 +11,25 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [math-Magician](#math-magician)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[\<math-Magician- HTML, CSS, JS,React\] ](#-math-magician--html-css-jsreact-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -131,6 +134,13 @@ To run tests, run the following command:
 - GitHub: [@githubhandle](https://github.com/maths29)
 - Twitter: [@twitterhandle](https://twitter.com/maths29)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/iwu-john-b92b01148/ )
+
+👤 **Bleu Yves Sopoude (MrBlue)**
+
+- GitHub: [@Bleu-Yves-Sopoude](https://github.com/Bleu-Yves-Sopoude)
+- Linkedin: [@in/bleu-yves](https://www.linkedin.com/in/bleu-yves/)
+- GitHub: [@bleuYves](https://twitter.com/bleuYves)
+
 
 
 

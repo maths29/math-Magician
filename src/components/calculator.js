@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 import '../styles/calculator.css';
-import Header from './Header';
 
 const Calculator = () => {
   const [state, setState] = useState({
@@ -17,7 +16,6 @@ const Calculator = () => {
 
   return (
     <>
-      <Header />
       <div>
         <div className="prompAndCalDiv">
           <h2 className="myh2">Let&#39;s do some math!</h2>

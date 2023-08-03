@@ -1,10 +1,8 @@
 import '../styles/home.css';
 import React from 'react';
-import Header from './Header';
 
 const Home = () => (
   <>
-    <Header />
     <div>
       <h2>Welcome to our page</h2>
       <div className="paraDiv">
